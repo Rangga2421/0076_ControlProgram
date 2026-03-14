@@ -5,7 +5,7 @@ int main(){
     int x;
 
     srand(time(0));
-    x = rand();
+    x = rand() % 10;
 
     cout << "Bilangan yang diberikan = " << x;
 }
