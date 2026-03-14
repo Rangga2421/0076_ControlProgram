@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+float Rata_rata(float a, float b){
+    return (a+b)/2;
+}
+
 int main(){
     float nilBI,nilMT,rerata;
     string status;
@@ -10,7 +14,8 @@ int main(){
     cout << "Masukkan nilai Matematika = ";
     cin >> nilMT;
 
-    rerata = (nilBI+nilMT)/2;
+    //rerata = (nilBI+nilMT)/2;
+    rerata = Rata_rata(nilBI,nilMT);
 
     if (rerata >= 60)
         status = "Lolos";
